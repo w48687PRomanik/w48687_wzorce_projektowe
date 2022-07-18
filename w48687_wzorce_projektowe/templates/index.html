@@ -5,14 +5,15 @@
 <div class="jumbotron">
     <h1>GEDcom analyser - software to analyse your GEDcom files</h1>
     <p class="lead">Approach of using design patterns to manipulate GEDcom files</p>
-    <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Let's  check it out!' &raquo;</a></p>
+    <p><a href="{{ url_for('worker') }}" class="btn btn-primary btn-large">Let's  check it out!' &raquo;</a></p>
+
 </div>
 
 <div class="row">
     <div class="col-md-4">
         <h2>Check code on GitHub</h2>
         <p>
-            Let's check application code repository on Github'
+            Let's check application code repository on Github
         </p>
         <p><a class="btn btn-default" href="https://github.com/w48687PRomanik/w48687_wzorce_projektowe">Check now! &raquo;</a></p>
     </div>
@@ -24,7 +25,7 @@
     <div class="col-md-4">
         <h2>Read documentation</h2>
         <p>Read documentation before running app.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Read docs &raquo;</a></p>
+        <p><a class="btn btn-default" href="{{ url_for('about') }}">Read docs &raquo;</a></p>
     </div>
 </div>
 

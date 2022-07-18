@@ -1,0 +1,974 @@
+0 HEAD
+1 SOUR Kiwitrees
+2 NAME Kiwitrees
+2 VERS 3.3.5
+1 DEST DISKETTE
+1 DATE 25 JAN 2022
+2 TIME 11:26:27
+1 GEDC
+2 VERS 5.5.1
+2 FORM Lineage-Linked
+1 CHAR UTF-8
+1 FILE genealogia
+1 SUBM @SUBM@
+0 @SUBM@ SUBM
+1 NAME PawelRomanik
+1 ADDR rymwid@gmail.com
+0 @I10927@ INDI
+1 _UID 9A5193AF301F42E5892C2C1285E6B56218F2
+1 NAME Katarzyna /Czarniecka/
+2 SURN Czarniecka
+2 GIVN Katarzyna
+1 SEX F
+1 FAMS @F3358@
+1 CHAN
+2 DATE 24 JAN 2022
+3 TIME 21:01:51
+1 FAMC @F2922@
+1 _UID D82FD66A3D494D96B60E8856703CEC7E6858
+1 BIRT
+2 DATE ABT 1829
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10927&ged=genealogia
+0 @I9777@ INDI
+1 _UID CD7A8C6BCC174B99B9E15C06EC43E49FB3FE
+1 NAME Krzysztof /Czarniecki/
+2 SURN Czarniecki
+2 GIVN Krzysztof
+1 SEX M
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:28:23
+1 FAMS @F2926@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9777&ged=genealogia
+0 @I9769@ INDI
+1 _UID 58779A5F120E4BFA9A9FD15832288CC136C2
+1 NAME Maciej /Czarniecki/
+2 SURN Czarniecki
+2 GIVN Maciej
+1 SEX M
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:31:25
+1 FAMS @F2922@
+1 FAMC @F2926@
+1 BIRT
+2 DATE 2 JAN 1803
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9769&ged=genealogia
+0 @I9772@ INDI
+1 _UID B21CBC49277646CA8AC674808CD2EA1521FE
+1 NAME Marianna /Drapała/
+2 SURN Drapała
+2 GIVN Marianna
+1 SEX F
+1 FAMS @F2923@
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:19:53
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9772&ged=genealogia
+0 @I10944@ INDI
+1 _UID D175283B399F41DBB57CD1268A4B91F520A8
+1 NAME Jan /Folta/
+2 SURN Folta
+2 GIVN Jan
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:50:33
+1 FAMS @F3367@
+1 FAMC @F3369@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10944&ged=genealogia
+0 @I10917@ INDI
+1 _UID 1FDA42D6130F4DAEAC90A2AFAECD39D948CA
+1 NAME Maria /Folta/
+2 SURN Folta
+2 GIVN Maria
+1 SEX F
+1 FAMS @F3353@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 10:13:03
+1 FAMC @F3355@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10917&ged=genealogia
+0 @I10954@ INDI
+1 _UID 2FF522CB6B904FE883DF9FE8525459D4FF25
+1 NAME Marianna /Folta/
+2 SURN Folta
+2 GIVN Marianna
+1 SEX F
+1 FAMS @F3372@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:20:38
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10954&ged=genealogia
+0 @I10920@ INDI
+1 _UID AE91B221840547F597AAB9E4B76801C99E99
+1 NAME Mieczysław /Folta/
+2 SURN Folta
+2 GIVN Mieczysław
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 10:14:00
+1 FAMS @F3355@
+1 FAMC @F3356@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10920&ged=genealogia
+0 @I10947@ INDI
+1 _UID 82A069B79A054A819115C49402A74C943325
+1 NAME Walenty /Folta/
+2 SURN Folta
+2 GIVN Walenty
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:13:30
+1 FAMS @F3369@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10947&ged=genealogia
+0 @I10922@ INDI
+1 _UID 64718285B352405490C1D297D43249BA38F2
+1 NAME Władysław /Folta/
+2 SURN Folta
+2 GIVN Władysław
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:13:10
+1 FAMS @F3356@
+1 BIRT
+2 DATE 19 AUG 1890
+1 FAMC @F3367@
+1 DEAT
+2 DATE 1 APR 1960
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10922&ged=genealogia
+0 @I10939@ INDI
+1 _UID 92434FDA7CEB4D95A3B8977DFF695BD85179
+1 NAME Maria /Janiur/
+2 SURN Janiur
+2 GIVN Maria
+1 SEX F
+1 FAMS @F3364@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:44:06
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10939&ged=genealogia
+0 @I10950@ INDI
+1 _UID 2D2565E148D74DE791FB628D89598616E46F
+1 NAME Katarzyna /Kędzior/
+2 SURN Kędzior
+2 GIVN Katarzyna
+1 SEX F
+1 FAMS @F3370@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:14:09
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10950&ged=genealogia
+0 @I10360@ INDI
+1 _UID 6E355C2045FB45169364FF16EAF762CED7FB
+1 NAME Anna /Kroczek/
+2 SURN Kroczek
+2 GIVN Anna
+1 SEX F
+1 CHAN
+2 DATE 14 MAY 2021
+3 TIME 16:51:08
+1 BIRT
+2 DATE 12 OCT 1962
+1 FAMC @F3353@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10360&ged=genealogia
+0 @I10918@ INDI
+1 _UID 25920DF05B12417D87D80F20EB1A07BC359B
+1 NAME Jan /Kroczek/
+2 SURN Kroczek
+2 GIVN Jan
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:35:13
+1 FAMS @F3354@
+1 BIRT
+2 DATE 29 DEC 1902
+1 DEAT
+2 DATE 28 NOV 1986
+1 FAMC @F3357@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10918&ged=genealogia
+0 @I10361@ INDI
+1 _UID ACD9553321764146954CC12BEAC0AA428EE9
+1 NAME Józef /Kroczek/
+2 SURN Kroczek
+2 GIVN Józef
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:37:50
+1 FAMS @F3353@
+1 FAMC @F3354@
+1 BIRT
+2 DATE 12 MAY 1938
+1 DEAT
+2 DATE 21 OCT 2015
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10361&ged=genealogia
+0 @I9767@ INDI
+1 _UID 1F5E80C217E8457A9280D671B3DF2543D093
+1 NAME Mikołaj /Kroczek/
+2 SURN Kroczek
+2 GIVN Mikołaj
+1 SEX M
+1 CHAN
+2 DATE 24 JAN 2022
+3 TIME 20:58:37
+1 FAMS @F2921@
+1 BIRT
+2 DATE ABT 1746
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9767&ged=genealogia
+0 @I9761@ INDI
+1 _UID A9B3138A24744E54BC5D4002C7EFF98BC820
+1 NAME Szymon /Kroczek/
+2 SURN Kroczek
+2 GIVN Szymon
+1 SEX M
+1 CHAN
+2 DATE 24 JAN 2022
+3 TIME 21:01:47
+1 BIRT
+2 DATE (13.10.1796)
+2 PLAC Wola Węgierska ; Pruchnik Wieś, Pruchnik, Powiat jarosławski, Województwo podkarpackie, Polska
+1 FAMC @F2921@
+1 FAMS @F3358@
+1 _UID 0B9ABF231BFF4D35885EFD77461C1DF8F4B8
+1 RELI rzym. kat.
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9761&ged=genealogia
+0 @I10925@ INDI
+1 _UID E8A6BAAAD9EB4F3B8F4FC07ED5611D47F605
+1 NAME Wawrzyniec /Kroczek/
+2 SURN Kroczek
+2 GIVN Wawrzyniec
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:35:25
+1 BIRT
+2 DATE 1869
+1 FAMC @F3358@
+1 FAMS @F3357@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10925&ged=genealogia
+0 @I10960@ INDI
+1 _UID 7242474EE0A442DB94702E30553275EA321B
+1 NAME Agnieszka /Kubas/
+2 SURN Kubas
+2 GIVN Agnieszka
+1 SEX F
+1 FAMS @F3375@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:23:55
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10960&ged=genealogia
+0 @I10931@ INDI
+1 _UID 40EB5F68D55F4D7EA9B4647E90225EFB3B1F
+1 NAME Andrzej /Kubas/
+2 SURN Kubas
+2 GIVN Andrzej
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:39:15
+1 FAMC @F3361@
+1 BIRT
+2 DATE 1861
+1 FAMS @F3360@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10931&ged=genealogia
+0 @I10919@ INDI
+1 _UID A25BB5319A554BE995C9674C868B0C73A727
+1 NAME Bronisława /Kubas/
+2 SURN Kubas
+2 GIVN Bronisława
+1 SEX F
+1 FAMS @F3354@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:37:19
+1 BIRT
+2 DATE 6 AUG 1904
+1 DEAT
+2 DATE 7 APR 1987
+1 FAMC @F3360@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10919&ged=genealogia
+0 @I1401@ INDI
+1 _UID 34428C928E4D40858E4B65932495A51275B9
+1 RIN AB:I1401
+1 NAME Franciszek /Kubas/
+2 SURN Kubas
+2 GIVN Franciszek
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:20:17
+1 FAMS @F333@
+1 BIRT
+2 DATE ABT 1764
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I1401&ged=genealogia
+0 @I10951@ INDI
+1 _UID C8FC320764944FC29818D5CC9FB6174003BD
+1 NAME Franciszek /Kubas/
+2 SURN Kubas
+2 GIVN Franciszek
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:20:55
+1 FAMS @F3371@
+1 BIRT
+2 DATE ABT 1816
+1 FAMC @F333@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10951&ged=genealogia
+0 @I10932@ INDI
+1 _UID 9EAB4B1517EA448A87925E15869B10083D98
+1 NAME Marcin /Kubas/
+2 SURN Kubas
+2 GIVN Marcin
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:38:56
+1 FAMS @F3361@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10932&ged=genealogia
+0 @I10934@ INDI
+1 _UID 844172166C09407996C45D00CE4FDA638C13
+1 NAME Salomea /Kubas/
+2 SURN Kubas
+2 GIVN Salomea
+1 SEX F
+1 FAMS @F3360@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:39:53
+1 FAMC @F3362@
+1 BIRT
+2 DATE 1872
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10934&ged=genealogia
+0 @I10935@ INDI
+1 _UID 73FF77C646ED45E48C8D5D01C9736C2650C7
+1 NAME Tomasz /Kubas/
+2 SURN Kubas
+2 GIVN Tomasz
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:22:05
+1 FAMS @F3362@
+1 FAMC @F3371@
+1 BIRT
+2 DATE ABT 1848
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10935&ged=genealogia
+0 @I10948@ INDI
+1 _UID CE659AC306AD4664BD72294CB68B6FE223C6
+1 NAME Magdalena /Kucab/
+2 SURN Kucab
+2 GIVN Magdalena
+1 SEX F
+1 FAMS @F3369@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:13:45
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10948&ged=genealogia
+0 @I10958@ INDI
+1 _UID 6CD0B190AC7E4331B1273963298493EBBADE
+1 NAME Zofia /Maciuch/
+2 SURN Maciuch
+2 GIVN Zofia
+1 SEX F
+1 FAMS @F3374@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:23:30
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10958&ged=genealogia
+0 @I10952@ INDI
+1 _UID 96E312A03F314226833C1443185014D36890
+1 NAME Agnieszka /Motyka/
+2 SURN Motyka
+2 GIVN Agnieszka
+1 SEX F
+1 FAMS @F3371@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:20:29
+1 BIRT
+2 DATE ABT 1821
+1 FAMC @F3372@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10952&ged=genealogia
+0 @I10953@ INDI
+1 _UID A1C48047BA3E4A8B813F7C43496A8A6C212A
+1 NAME Józef /Motyka/
+2 SURN Motyka
+2 GIVN Józef
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:18:18
+1 FAMS @F3372@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10953&ged=genealogia
+0 @I10959@ INDI
+1 _UID E54E8C70105E4CA89B07BD2337B36690F35B
+1 NAME Marcin /Olejarz/
+2 SURN Olejarz
+2 GIVN Marcin
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:23:40
+1 FAMS @F3375@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10959&ged=genealogia
+0 @I10955@ INDI
+1 _UID 00B4F94B03B940F09B4F569F58627A9E9538
+1 NAME Paweł /Olejarz/
+2 SURN Olejarz
+2 GIVN Paweł
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:24:25
+1 FAMS @F3373@
+1 FAMC @F3375@
+1 BIRT
+2 DATE 4 JAN 1802
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10955&ged=genealogia
+0 @I10936@ INDI
+1 _UID 9B9C72E1BA9A471BB27F9FF19DB076925606
+1 NAME Urszula Katarzyna /Olejarz/
+2 SURN Olejarz
+2 GIVN Urszula Katarzyna
+1 SEX F
+1 FAMS @F3362@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:21:49
+1 BIRT
+2 DATE ABT 1846
+1 FAMC @F3373@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10936&ged=genealogia
+0 @I10930@ INDI
+1 _UID 285C5D8AAA9546EDA55673B43707360B7E8C
+1 NAME Barbara /Olszańska/
+2 SURN Olszańska
+2 GIVN Barbara
+1 SEX F
+1 FAMS @F3359@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:36:38
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10930&ged=genealogia
+0 @I10921@ INDI
+1 _UID D42E9E4DEE4E490DBB856694BA74FF543AA9
+1 NAME Helena /Segiet/
+2 SURN Segiet
+2 GIVN Helena
+1 SEX F
+1 FAMS @F3355@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:47:40
+1 BIRT
+2 DATE 9 MAY 1921
+1 FAMC @F3363@
+1 DEAT
+2 DATE 24 AUG 2009
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10921&ged=genealogia
+0 @I10937@ INDI
+1 _UID ADE6FAF2C3514992B9B2CF10A68CBB4EF3AB
+1 NAME Marcin /Segiet/
+2 SURN Segiet
+2 GIVN Marcin
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:46:38
+1 FAMC @F3364@
+1 FAMS @F3363@
+1 BIRT
+2 DATE 1 OCT 1879
+2 PLAC Hucisko Nienadowskie, Dubiecko
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10937&ged=genealogia
+0 @I10938@ INDI
+1 _UID 9D65AE0FD6D24D8FA48C313F67BC601E841C
+1 NAME Wojciech /Segiet/
+2 SURN Segiet
+2 GIVN Wojciech
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:43:58
+1 FAMS @F3364@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10938&ged=genealogia
+0 @I9770@ INDI
+1 _UID 4825906C08A942D2A1049C5E6EE4CC8D78CB
+1 NAME Katarzyna /Skrzyńska/
+2 SURN Skrzyńska
+2 GIVN Katarzyna
+1 SEX F
+1 FAMS @F2922@
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:20:00
+1 FAMC @F2923@
+1 BIRT
+2 DATE 25 OCT 1797
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9770&ged=genealogia
+0 @I9771@ INDI
+1 _UID 7D24CEEE59334BFD9121A508EDF91A59E917
+1 NAME Wojciech /Skrzyński/
+2 SURN Skrzyński
+2 GIVN Wojciech
+1 SEX M
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:18:29
+1 FAMS @F2923@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9771&ged=genealogia
+0 @I10940@ INDI
+1 _UID A6E9FF539D8D4C179ED609A358E2F56724E8
+1 NAME Anastazja /Sobol/
+2 SURN Sobol
+2 GIVN Anastazja
+1 SEX F
+1 FAMS @F3363@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:46:57
+1 FAMC @F3365@
+1 BIRT
+2 DATE 6 APR 1880
+2 PLAC Kramarzówka
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10940&ged=genealogia
+0 @I10941@ INDI
+1 _UID 6BE70C160D19495092F7E564A0134F555CA7
+1 NAME Anna /Sobol/
+2 SURN Sobol
+2 GIVN Anna
+1 SEX F
+1 FAMS @F3365@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:44:47
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10941&ged=genealogia
+0 @I10933@ INDI
+1 _UID 52B538C5E5F94E91A6ADE796F849BB78054C
+1 NAME Katarzyna /Sokołowska/
+2 SURN Sokołowska
+2 GIVN Katarzyna
+1 SEX F
+1 FAMS @F3361@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:39:07
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10933&ged=genealogia
+0 @I10943@ INDI
+1 _UID 99B45CE34F374713A8036D5A6FDFA924F9A1
+1 NAME Rozalia /Szafran/
+2 SURN Szafran
+2 GIVN Rozalia
+1 SEX F
+1 FAMS @F3366@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:50:19
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10943&ged=genealogia
+0 @I10957@ INDI
+1 _UID 058904E499BE4C0B98DEAE7341667E6F4F9A
+1 NAME Andrzej /Szewc/
+2 SURN Szewc
+2 GIVN Andrzej
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:22:35
+1 FAMS @F3374@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10957&ged=genealogia
+0 @I10956@ INDI
+1 _UID D2AE9201092E48A386C5530D22AB84CDFE70
+1 NAME Helena /Szewc/
+2 SURN Szewc
+2 GIVN Helena
+1 SEX F
+1 FAMS @F3373@
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:22:28
+1 FAMC @F3374@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10956&ged=genealogia
+0 @I1402@ INDI
+1 _UID 2C8F92D9F087405DBB280CEE4352BD66CFB4
+1 RIN AB:I1402
+1 NAME Marianna /Szewc/
+2 SURN Szewc
+2 GIVN Marianna
+1 SEX F
+1 FAMS @F333@
+1 CHAN
+2 DATE 1 JAN 2021
+3 TIME 22:35:43
+1 BIRT
+2 DATE ABT 1768
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I1402&ged=genealogia
+0 @I9778@ INDI
+1 _UID 54DEE3020DD048EE9DF106073F70A69CB67A
+1 NAME Barbara /Szkoła/
+2 SURN Szkoła
+2 GIVN Barbara
+1 SEX F
+1 FAMS @F2926@
+1 CHAN
+2 DATE 23 NOV 2020
+3 TIME 21:31:30
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9778&ged=genealogia
+0 @I10928@ INDI
+1 _UID 7093327A119D435899C20FB08F47B5A542CC
+1 NAME Anna /Świnkowska/
+2 SURN Świnkowska
+2 GIVN Anna
+1 SEX F
+1 FAMS @F3357@
+1 BIRT
+2 DATE 1882
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:36:13
+1 FAMC @F3359@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10928&ged=genealogia
+0 @I10929@ INDI
+1 _UID B4C83D042B04459C84C74914849CAD7DBF46
+1 NAME Filip /Świnkowski/
+2 SURN Świnkowski
+2 GIVN Filip
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:36:21
+1 FAMS @F3359@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10929&ged=genealogia
+0 @I10942@ INDI
+1 _UID 8B99C4FB36474AF89ADC68CDE6B3291120A8
+1 NAME Józef /Włoch/
+2 SURN Włoch
+2 GIVN Józef
+1 SEX M
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:50:12
+1 FAMS @F3366@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10942&ged=genealogia
+0 @I10923@ INDI
+1 _UID 50CA43582F65443CB434007443A337488A42
+1 NAME Paulina /Włoch/
+2 SURN Włoch
+2 GIVN Paulina
+1 SEX F
+1 FAMS @F3356@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:50:06
+1 BIRT
+2 DATE 23 JUL 1889
+2 PLAC Łopuszka Mała
+1 FAMC @F3366@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10923&ged=genealogia
+0 @I11078@ INDI
+1 _UID 488E4B6304A54D319BF02E22250C206A417D
+1 NAME Wojciech /Wróbel/
+2 SURN Wróbel
+2 GIVN Wojciech
+1 SEX M
+1 FAMS @F3411@
+1 CHAN
+2 DATE 24 JAN 2022
+3 TIME 20:29:33
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I11078&ged=genealogia
+0 @I9768@ INDI
+1 _UID DE8D921A12034295A3B5D6823516C801C77B
+1 NAME Zofia /Wróbel/
+2 SURN Wróbel
+2 GIVN Zofia
+1 SEX F
+1 FAMS @F2921@
+1 CHAN
+2 DATE 24 JAN 2022
+3 TIME 20:58:51
+1 FAMC @F3411@
+1 BIRT
+2 DATE ABT 1767
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I9768&ged=genealogia
+0 @I10945@ INDI
+1 _UID FD6CD795DF6A4699A6F8271C724F15BB6F9E
+1 NAME Agnieszka /Wywiórkowska/
+2 SURN Wywiórkowska
+2 GIVN Agnieszka
+1 SEX F
+1 FAMS @F3367@
+1 CHAN
+2 DATE 7 DEC 2021
+3 TIME 12:50:44
+1 FAMC @F3370@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10945&ged=genealogia
+0 @I10949@ INDI
+1 _UID 9CFED4AB6AF64B4995D1BF424413FB7A40CE
+1 NAME Maciej /Wywiórkowski/
+2 SURN Wywiórkowski
+2 GIVN Maciej
+1 SEX M
+1 CHAN
+2 DATE 8 DEC 2021
+3 TIME 0:13:54
+1 FAMS @F3370@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/individual.php?pid=I10949&ged=genealogia
+0 @F3365@ FAM
+1 WIFE @I10941@
+1 CHIL @I10940@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3365&ged=genealogia
+0 @F2926@ FAM
+1 HUSB @I9777@
+1 WIFE @I9778@
+1 CHIL @I9769@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F2926&ged=genealogia
+0 @F2922@ FAM
+1 HUSB @I9769@
+1 WIFE @I9770@
+1 CHIL @I10927@
+1 MARR
+2 DATE 26 FEB 1821
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F2922&ged=genealogia
+0 @F3367@ FAM
+1 HUSB @I10944@
+1 WIFE @I10945@
+1 CHIL @I10922@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3367&ged=genealogia
+0 @F3355@ FAM
+1 HUSB @I10920@
+1 WIFE @I10921@
+1 CHIL @I10917@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3355&ged=genealogia
+0 @F3369@ FAM
+1 HUSB @I10947@
+1 WIFE @I10948@
+1 CHIL @I10944@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3369&ged=genealogia
+0 @F3356@ FAM
+1 HUSB @I10922@
+1 WIFE @I10923@
+1 CHIL @I10920@
+1 MARR
+2 DATE 30 SEP 1913
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3356&ged=genealogia
+0 @F3354@ FAM
+1 HUSB @I10918@
+1 WIFE @I10919@
+1 CHIL @I10361@
+1 MARR
+2 DATE 16 NOV 1935
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3354&ged=genealogia
+0 @F3353@ FAM
+1 HUSB @I10361@
+1 WIFE @I10917@
+1 CHIL @I10360@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3353&ged=genealogia
+0 @F2921@ FAM
+1 HUSB @I9767@
+1 WIFE @I9768@
+1 CHIL @I9761@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F2921&ged=genealogia
+0 @F3358@ FAM
+1 HUSB @I9761@
+1 WIFE @I10927@
+1 CHIL @I10925@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3358&ged=genealogia
+0 @F3357@ FAM
+1 HUSB @I10925@
+1 WIFE @I10928@
+1 CHIL @I10918@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3357&ged=genealogia
+0 @F3360@ FAM
+1 HUSB @I10931@
+1 WIFE @I10934@
+1 CHIL @I10919@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3360&ged=genealogia
+0 @F3371@ FAM
+1 HUSB @I10951@
+1 WIFE @I10952@
+1 CHIL @I10935@
+1 MARR
+2 DATE 1839
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3371&ged=genealogia
+0 @F333@ FAM
+1 HUSB @I1401@
+1 WIFE @I1402@
+1 MARR
+2 DATE 5 NOV 1786
+1 CHIL @I10951@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F333&ged=genealogia
+0 @F3361@ FAM
+1 HUSB @I10932@
+1 WIFE @I10933@
+1 CHIL @I10931@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3361&ged=genealogia
+0 @F3362@ FAM
+1 HUSB @I10935@
+1 WIFE @I10936@
+1 CHIL @I10934@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3362&ged=genealogia
+0 @F3372@ FAM
+1 HUSB @I10953@
+1 WIFE @I10954@
+1 CHIL @I10952@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3372&ged=genealogia
+0 @F3375@ FAM
+1 HUSB @I10959@
+1 WIFE @I10960@
+1 CHIL @I10955@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3375&ged=genealogia
+0 @F3373@ FAM
+1 HUSB @I10955@
+1 WIFE @I10956@
+1 CHIL @I10936@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3373&ged=genealogia
+0 @F3363@ FAM
+1 HUSB @I10937@
+1 WIFE @I10940@
+1 CHIL @I10921@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3363&ged=genealogia
+0 @F3364@ FAM
+1 HUSB @I10938@
+1 WIFE @I10939@
+1 CHIL @I10937@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3364&ged=genealogia
+0 @F2923@ FAM
+1 HUSB @I9771@
+1 WIFE @I9772@
+1 CHIL @I9770@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F2923&ged=genealogia
+0 @F3374@ FAM
+1 HUSB @I10957@
+1 WIFE @I10958@
+1 CHIL @I10956@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3374&ged=genealogia
+0 @F3359@ FAM
+1 HUSB @I10929@
+1 WIFE @I10930@
+1 CHIL @I10928@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3359&ged=genealogia
+0 @F3366@ FAM
+1 HUSB @I10942@
+1 WIFE @I10943@
+1 CHIL @I10923@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3366&ged=genealogia
+0 @F3411@ FAM
+1 HUSB @I11078@
+1 CHIL @I9768@
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3411&ged=genealogia
+0 @F3370@ FAM
+1 HUSB @I10949@
+1 WIFE @I10950@
+1 CHIL @I10945@
+1 MARR Y
+1 SOUR @KIWITREES@
+2 PAGE http://romanikowie.org/family.php?famid=F3370&ged=genealogia
+0 @KIWITREES@ SOUR
+1 TITL http://romanikowie.org/
+0 TRLR

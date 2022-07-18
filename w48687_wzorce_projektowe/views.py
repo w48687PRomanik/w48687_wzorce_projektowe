@@ -16,14 +16,14 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/contact')
-def contact():
+@app.route('/worker')
+def worker():
     """Renders the contact page."""
     return render_template(
-        'contact.html',
-        title='Contact',
+        'worker.html',
+        title='Application',
         year=datetime.now().year,
-        message='Your contact page.'
+        message='Manipulate GEDcom files'
     )
 
 @app.route('/about')
@@ -36,23 +36,4 @@ def about():
         message='Your application description page.'
     )
 
-@app.route('/docs')
-def docs():
-    """Renders the about page."""
-    return render_template(
-        'docs.html',
-        title='Docs',
-        year=datetime.now().year,
-        message='Documentation'
-    )
-
-@app.route('/app')
-def app():
-    """Renders the about page."""
-    return render_template(
-        'app.html',
-        title='App',
-        year=datetime.now().year,
-        message='Application'
-    )
 

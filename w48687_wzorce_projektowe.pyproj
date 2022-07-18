@@ -28,6 +28,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runserver.py" />
+    <Compile Include="w48687_wzorce_projektowe\module.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="w48687_wzorce_projektowe\__init__.py" />
     <Compile Include="w48687_wzorce_projektowe\views.py" />
   </ItemGroup>
@@ -36,6 +39,7 @@
     <Folder Include="w48687_wzorce_projektowe\static\" />
     <Folder Include="w48687_wzorce_projektowe\static\content\" />
     <Folder Include="w48687_wzorce_projektowe\static\fonts\" />
+    <Folder Include="w48687_wzorce_projektowe\static\gedcom_files\" />
     <Folder Include="w48687_wzorce_projektowe\static\scripts\" />
     <Folder Include="w48687_wzorce_projektowe\templates\" />
   </ItemGroup>
@@ -48,6 +52,7 @@
     <Content Include="w48687_wzorce_projektowe\static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="w48687_wzorce_projektowe\static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="w48687_wzorce_projektowe\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="w48687_wzorce_projektowe\static\gedcom_files\test_file.ged" />
     <Content Include="w48687_wzorce_projektowe\static\scripts\bootstrap.js" />
     <Content Include="w48687_wzorce_projektowe\static\scripts\bootstrap.min.js" />
     <Content Include="w48687_wzorce_projektowe\static\scripts\jquery-1.10.2.intellisense.js" />
@@ -65,7 +70,7 @@
     <Content Include="w48687_wzorce_projektowe\static\scripts\_references.js" />
     <Content Include="w48687_wzorce_projektowe\templates\about.html" />
     <Content Include="w48687_wzorce_projektowe\templates\app.html" />
-    <Content Include="w48687_wzorce_projektowe\templates\contact.html" />
+    <Content Include="w48687_wzorce_projektowe\templates\worker.html" />
     <Content Include="w48687_wzorce_projektowe\templates\docs.html" />
     <Content Include="w48687_wzorce_projektowe\templates\index.html" />
     <Content Include="w48687_wzorce_projektowe\templates\layout.html" />

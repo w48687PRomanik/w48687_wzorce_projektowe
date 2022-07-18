@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1> {{title | default ("Title Not Found")}} </h1>
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+
+
+{% endblock %}
