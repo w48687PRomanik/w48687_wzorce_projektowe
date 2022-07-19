@@ -18,6 +18,7 @@
             <th>Task owner</th>
             <th>Created at</th>
             <th>Priority</th>
+            <th>Progress</th>
             <th>Due date</th>
             <th>Actions</th>
         </tr>
@@ -28,6 +29,7 @@
             <td>{{ task.owner }}</td>
             <td>{{ task.date_created.date() }}</td>
             <td>{{ task.priority }}</td>
+            <td>{{ task.progress }}</td>
             <td>{{ task.duedate }}</td>
 
             <td>
@@ -56,8 +58,10 @@
                 <input type="text" name="owner" id="owner" class="form-control" placeholder="Enter owner name">
                 <label for="dueDate">Due date:</label>
                 <input type="text" name="duedate" id="duedate" class="form-control" placeholder="Enter due date in format YYYY-MM-DD">
+                <input type="number" name="progress" id="progress" min="0" max="10" class="form-control" placeholder="Enter progresss as a value from 0 to 10">
                 <label for="taskPrioritye">Priority:</label>
                 <input type="text" name="priority" id="priority" class="form-control" placeholder="Choose priority">
+
                 <button type="submit" class="btn btn-primary" value="Add Task">Add Task</button>
 </form>
 

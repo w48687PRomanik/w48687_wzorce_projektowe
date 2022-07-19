@@ -1,7 +1,8 @@
 """
 This script runs the w48687_wzorce_projektowe application using a development server.
 """
-
+from __future__ import annotations
+from typing import Any, List
 from os import environ
 from w48687_wzorce_projektowe import app
 

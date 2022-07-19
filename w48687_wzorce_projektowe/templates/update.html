@@ -14,6 +14,7 @@
             </div>
             <input type="text" name="owner" id="owner" value="{{task.owner}}">
             <input type="text" name="priority" id="priority" value="{{task.priority}}">
+            <input type="number" name="progress"  min="0" max="10"  id="progress" class="form-control" value="{{task.progress}}" placeholder="Enter progresss as a value from 0 to 10">
             <label for="dueDate">Due date:</label>
             <input type="text" name="duedate" id="duedate" class="form-control" placeholder="Enter due date in format YYYY-MM-DD" value="{{task.duedate}}">
             <button type="submit" class="btn btn-primary" value="Update">Update</button>
