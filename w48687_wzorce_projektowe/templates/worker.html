@@ -4,12 +4,10 @@
 
 <h1> {{title | default ("Title Not Found")}} </h1>
 
-<h2>{{ title }}.</h2>
 <h3>{{ message }}</h3>
 
 <div class="content">
-    <h1 style="text-align: center">Task Master</h1>
-    {% if tasks|length < 1 %}
+     {% if tasks|length < 1 %}
     <h4 style="text-align: center">There are no tasks. Create one below!</h4>
     {% else %}
     <table>

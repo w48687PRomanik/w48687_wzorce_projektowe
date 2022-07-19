@@ -54,7 +54,9 @@ def worker():
 
     else:
         tasks = Todo.query.order_by(Todo.date_created).all()
-        return render_template('worker.html', tasks=tasks)
+        return render_template('worker.html', tasks=tasks, title='Task manager',
+        year=datetime.now().year,
+        message='Manage your tasks easly')
 
 
 
