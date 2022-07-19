@@ -19,16 +19,26 @@ app = Flask(__name__)
 
 import w48687_wzorce_projektowe.views
 
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///gedcom.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
 db = SQLAlchemy(app)
+
+""" definicje klas """
 
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
+    description = db.Column(db.String(200), nullable=True)
+    duedate = db.Column(db.String(10), nullable=True)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
         return '<Task %r>' % self.id
+
+
+
+
+""" views """
+
 
 @app.route('/')
 @app.route('/home')
@@ -43,7 +53,11 @@ def home():
 def worker():
     if request.method == 'POST':
         task_content = request.form['content']
-        new_task = Todo(content=task_content)
+        #new_task = Todo(content=task_content)
+        task_description = request.form['description']
+        task_duedate = request.form['duedate']
+        new_task = Todo(content=task_content, description=task_description, duedate=task_duedate)
+         
 
         try:
             db.session.add(new_task)
@@ -77,6 +91,8 @@ def update(id):
 
     if request.method == 'POST':
         task.content = request.form['content']
+        task.description = request.form['description']
+        task.duedate = request.form['duedate']
 
         try:
             db.session.commit()

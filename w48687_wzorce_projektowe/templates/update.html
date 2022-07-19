@@ -8,7 +8,13 @@
     <div class="form">
         <form action="/worker/update/{{task.id}}" method="POST">
             <input type="text" name="content" id="content" value="{{task.content}}">
-            <input type="submit" value="Update">
+            <div class="form-group">
+                <label for="taskDescription">Task description:</label>
+                <textarea class="form-control" name="description" id="description" rows="3">{{task.description}}</textarea>
+            </div>
+            <label for="dueDaet">Due date:</label>
+            <input type="text" name="duedate" id="duedate" class="form-control" placeholder="Enter due date in format YYYY-MM-DD"   value="{{task.duedate}}">
+            <button type="submit" class="btn btn-primary" value="Update">Update</button>
         </form>
     </div>
 </div>
