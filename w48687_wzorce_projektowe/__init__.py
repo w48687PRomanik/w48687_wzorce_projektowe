@@ -100,49 +100,6 @@ class TaskGroup(IComponent):
 
 """ Kompozyt """
 
-""" Iterator """
-
-class OddNumbers(object):
-    "An iterable object."
-
-    def __init__(self, maximum):
-        self.maximum = maximum
-
-    def __iter__(self):
-        return OddIterator(self)
-
-class OddIterator(object):
-    "An iterator."
-
-    def __init__(self, container):
-        self.container = container
-        self.n = -1
-
-    def __next__(self):
-        self.n += 2
-        if self.n > self.container.maximum:
-            raise StopIteration
-        return self.n
-
-    def __iter__(self):
-        return self
-
-""" Iterator """
-
-
-""" dekorator """
-
-def decorator_name(f):
-    @functools.wrap(f)
-    def wrapped(*args, **kwargs):
-        # to do 
-        result = f(*args, **kwargs)
-        # to do after
-
-        return result
-    return wrapped
-
-""" dekorator """
 
 
 """ views """
