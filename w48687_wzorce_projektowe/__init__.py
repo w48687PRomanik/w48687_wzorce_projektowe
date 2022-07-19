@@ -28,7 +28,9 @@ class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
     description = db.Column(db.String(200), nullable=True)
+    owner = db.Column(db.String(50), nullable=True)
     duedate = db.Column(db.String(10), nullable=True)
+    priority = db.Column(db.String(10), nullable=True)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
@@ -56,7 +58,10 @@ def worker():
         #new_task = Todo(content=task_content)
         task_description = request.form['description']
         task_duedate = request.form['duedate']
-        new_task = Todo(content=task_content, description=task_description, duedate=task_duedate)
+        task_owner = request.form['owner']
+        task_priority = request.form['priority']
+
+        new_task = Todo(content=task_content, description=task_description, duedate=task_duedate, owner = task_owner, priority=task_priority)
          
 
         try:
@@ -93,6 +98,8 @@ def update(id):
         task.content = request.form['content']
         task.description = request.form['description']
         task.duedate = request.form['duedate']
+        task.owner = request.form['owner']
+        task.priority = request.form['priority']
 
         try:
             db.session.commit()
