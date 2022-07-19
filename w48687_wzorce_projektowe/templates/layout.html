@@ -18,13 +18,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">GEDcom analyser</a>
+                <a href="/" class="navbar-brand">Task manager</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">Documentation</a></li>
-                    <li><a href="{{ url_for('worker') }}">Application</a></li>
+                    <li><a href="{{ url_for('worker') }}">Manage your tasks</a></li>
                 </ul>
             </div>
         </div>
@@ -34,7 +34,7 @@
         {% block content %}{% endblock %}
         <hr />
         <footer>
-            <p>&copy; {{ year }} Paweł Romanik w48687- GEDcom analyser </p>
+            <p>&copy; {{ year }} Paweł Romanik w48687- Task manager </p>
         </footer>
     </div>
 
