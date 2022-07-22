@@ -11,6 +11,7 @@
     <h4 style="text-align: center">There are no tasks. Create one below!</h4>
     {% else %}
     <h4 style="text-align: center">List of the tasks</h4>
+
     <table>
         <tr>
             <th>Task name</th>
@@ -44,32 +45,40 @@
 
 </div>
 
-    <h4 style="text-align: center">Create a new task</h4>
-    <div class="form">
-        <form action="/worker" method="POST">
+<h4 style="text-align: center">Create a new task</h4>
+<div class="form">
+    <form action="/worker" method="POST">
+        <div class="form-group">
+            <label for="taskName">Task name:</label>
+            <input type="text" name="content" id="content" class="form-control" placeholder="Enter task name">
             <div class="form-group">
-                <label for="taskName">Task name:</label>
-                <input type="text" name="content" id="content" class="form-control" placeholder="Enter task name">
-                <div class="form-group">
-                    <label for="taskDescription">Task description:</label>
-                    <textarea class="form-control" name="description" id="description" rows="3"></textarea>
-                </div>
-                <label for="taskOwner">Task owner:</label>
-                <input type="text" name="owner" id="owner" class="form-control" placeholder="Enter owner name">
-                <label for="dueDate">Due date:</label>
-                <input type="text" name="duedate" id="duedate" class="form-control" placeholder="Enter due date in format YYYY-MM-DD">
-                <input type="number" name="progress" id="progress" min="0" max="10" class="form-control" placeholder="Enter progresss as a value from 0 to 10">
-                <label for="taskPrioritye">Priority:</label>
-                <input type="text" name="priority" id="priority" class="form-control" placeholder="Choose priority">
+                <label for="taskDescription">Task description:</label>
+                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+            </div>
+            <label for="taskOwner">Task owner:</label>
+            <input type="text" name="owner" id="owner" class="form-control" placeholder="Enter owner name">
+            <label for="dueDate">Due date:</label>
+            <input type="text" name="duedate" id="duedate" class="form-control" placeholder="Enter due date in format YYYY-MM-DD">
+            <input type="number" name="progress" id="progress" min="0" max="10" class="form-control" placeholder="Enter progresss as a value from 0 to 10">
+            <label for="taskPrioritye">Priority:</label>
+            <input type="text" name="priority" id="priority" class="form-control" placeholder="Choose priority">
 
-                <button type="submit" class="btn btn-primary" value="Add Task">Add Task</button>
-</form>
+            <button type="submit" class="btn btn-primary" value="Add Task">Add Task</button>
+    </form>
 
-    </div>
+</div>
 
-
-
-
+{% if undo == true %}
+<div>
+    True</br>
+    <button type="submit" class="btn btn-primary" value="Undo">Undo</button>
+</div>
+{% else %}
+<div>
+    False</br>
+    <a href="/worker/undo">Undo</a>
+</div></div>
+{% endif %}
 
 
 {% endblock %}

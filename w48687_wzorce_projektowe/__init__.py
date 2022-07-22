@@ -8,11 +8,15 @@ from datetime import datetime
 from collections.abc import Iterable, Iterator
 from abc import ABCMeta, abstractmethod
 import functools
+import copy
 
 
 
 
 app = Flask(__name__)
+
+global undo
+undo = False
 
 import w48687_wzorce_projektowe.views
 import w48687_wzorce_projektowe.module
@@ -34,7 +38,7 @@ class Todo(db.Model):
 
     def __repr__(self):
         return '<Task %r>' % self.id
-     
+
 
 
 """ Kompozyt - grupowanie taskow"""
@@ -100,6 +104,88 @@ class TaskGroup(IComponent):
 
 """ Kompozyt """
 
+"""" Command """
+
+
+
+class EditTaskCommand(object):
+    def __init__(self, old_task, new_task):
+        #self._from = from_name.content
+        #self._to = to_name.content
+        self.o_id = old_task.id
+        # old task
+        self.o_content = old_task.content
+        
+        self.o_description = old_task.description
+        self.o_owner = old_task.owner
+        self.o_duedate = old_task.duedate
+        self.o_priority = old_task.priority
+        self.o_progress = old_task.progress
+        self.o_date_created = old_task
+        # new task
+        self.n_id = new_task.id        
+        self.n_content = new_task.content       
+        self.n_description = new_task.description
+        self.n_owner = new_task.owner
+        self.n_duedate = new_task.duedate
+        self.n_priority = new_task.priority
+        self.n_progress = new_task.progress
+        self.n_date_created = new_task.date_created
+        
+
+    def execute(self):
+        undo = True
+        print(f"File renamed from '{self.o_content}' to '{self.n_content}' and undo = {undo}")
+     
+
+
+    def undo(self):
+        print(f"Undo: File renamed from '{self.n_content}' to '{self.o_content}' and old ID: {self.o_id}")
+        task_to_edit = Todo.query.get_or_404(self.o_id)
+        task_to_edit.content = self.o_content
+        task_to_edit.description = self.o_description
+        task_to_edit.duedate = self.o_duedate
+        task_to_edit.owner = self.o_owner
+        task_to_edit.priority = self.o_priority
+        task_to_edit.progress = self.o_progress
+        try:
+            #db.session.delete(task_to_delete)
+            db.session.commit()
+            #print(f"usunieto task {task_to_delete}")
+            return redirect('/worker')
+        except:
+            return 'Wystapil problem przy usuwaniu zadania'
+        undo = False
+
+class DeleteTaskCommand(object):
+    def __init__(self, from_name, to_name):
+        self._from = from_name.content
+        self._to = to_name.content
+
+    def execute(self):
+        print(f"File renamed from '{self._from}' to '{self._to}'")
+
+
+    def undo(self):
+        print(f"Undo: File renamed from '{self._to}' to '{self._from}'")
+
+
+
+class History(object):
+    def __init__(self):
+        self._commands = list()
+
+    def execute(self, command):
+        self._commands.append(command)
+        command.execute()
+
+    def undo(self):
+        self._commands.pop().undo()
+
+history = History()
+
+
+""" Command """
 
 
 """ views """
@@ -150,6 +236,7 @@ def delete(id):
     try:
         db.session.delete(task_to_delete)
         db.session.commit()
+        #print(f"usunieto task {task_to_delete}")
         return redirect('/worker')
     except:
         return 'Wystapil problem przy usuwaniu zadania'
@@ -157,6 +244,8 @@ def delete(id):
 @app.route('/worker/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
     task = Todo.query.get_or_404(id)
+    task_to_be_edited = copy.deepcopy(task)
+    print(task)
 
     if request.method == 'POST':
         task.content = request.form['content']
@@ -168,12 +257,27 @@ def update(id):
 
         try:
             db.session.commit()
+            print(f"Edytowano task ")
+            history.execute(EditTaskCommand(task_to_be_edited, task))
             return redirect('/worker')
         except:
             return 'Wystapil problem przy edytowaniu zadania'
 
     else:
         return render_template('update.html', task=task)
+
+@app.route('/worker/undo')
+def undo():
+    #task_to_delete = Todo.query.get_or_404(id)
+
+    try:
+        #db.session.delete(task_to_delete)
+        #db.session.commit()
+        #print(f"usunieto task {task_to_delete}")
+        history.undo()
+        return redirect('/worker')
+    except:
+        return 'Wystapil problem przy usuwaniu zadania'
 
 
 @app.route('/about')
