@@ -3,28 +3,47 @@ The flask application package.
 """
 
 from flask import Flask, render_template, url_for, request, redirect
+from flask_mysqldb import MySQL
 from flask_sqlalchemy import SQLAlchemy 
 from datetime import datetime
 from collections.abc import Iterable, Iterator
-from abc import ABCMeta, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 import functools
 import copy
+import csv
+import pandas as pd
+from dataclasses import dataclass
+from tabulate import tabulate
 
 
 
 
 app = Flask(__name__)
 
+
+""" CONFIG """
+
 global undo
 undo = False
 
-import w48687_wzorce_projektowe.views
-import w48687_wzorce_projektowe.module
-
+# temporary config for SQLAlchemy
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
 db = SQLAlchemy(app)
 
-""" definicje klas """
+# MySQL config to be replaced
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'flask'
+ 
+mysql = MySQL(app)
+
+
+""" CONFIG END """
+
+
+""" klasa todo """
 
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -104,11 +123,22 @@ class TaskGroup(IComponent):
 
 """ Kompozyt """
 
+
+
 """" Command """
 
+class Command(ABC):
+    """
+    The Command interface declares a method for executing a command.
+    """
+    @abstractmethod
+    def execute(self) -> None:
+        pass
+    def undo(self) -> None:
+        pass
 
 
-class EditTaskCommand(object):
+class EditTaskCommand(Command):
     def __init__(self, old_task, new_task):
         #self._from = from_name.content
         #self._to = to_name.content
@@ -157,7 +187,7 @@ class EditTaskCommand(object):
             return 'Wystapil problem przy usuwaniu zadania'
         undo = False
 
-class DeleteTaskCommand(object):
+class DeleteTaskCommand(Command):
     def __init__(self, from_name, to_name):
         self._from = from_name.content
         self._to = to_name.content
@@ -182,10 +212,124 @@ class History(object):
     def undo(self):
         self._commands.pop().undo()
 
-history = History()
+
 
 
 """ Command """
+
+
+""" Sinlgeton """
+
+class Singleton:
+
+    def __init__(self, cls):
+        self._cls = cls
+
+    def Instance(self):
+        try:
+            return self._instance
+        except AttributeError:
+            self._instance = self._cls()
+            return self._instance
+
+    def __call__(self):
+        raise TypeError('Singletons must be accessed through `Instance()`.')
+
+    def __instancecheck__(self, inst):
+        return isinstance(inst, self._cls)
+
+
+@Singleton
+class DBConnection(object):
+
+    def __init__(self):
+        """Initialize your database connection here."""
+        # Creating a connection cursor
+        # cursor = mysql.connection._instance()
+ 
+        #Executing SQL Statements
+        # cursor.execute(''' CREATE TABLE table_name(field1, field2...) ''')
+        # cursor.execute(''' INSERT INTO table_name VALUES(v1,v2...) ''')
+        # cursor.execute(''' DELETE FROM table_name WHERE condition ''')
+ 
+        #Saving the Actions performed on the DB
+        # mysql.connection.commit()
+ 
+        #Closing the cursor
+        # cursor.close()
+
+
+        pass
+
+    def __str__(self):
+        return 'Database connection object'
+
+""" Singleton """
+
+""" Builder 
+
+
+class ReadCSV(metaclass=ABCMeta):
+    "CSV reader interface"
+
+    @staticmethod
+    @abstractmethod
+    def get_filename():
+        "Get filename"
+    @staticmethod
+    @abstractmethod
+    def get_delimiter():
+        "Get delimiter"
+    @staticmethod
+    @abstractmethod
+    def get_encoding():
+        "Get encoding"
+
+    @staticmethod
+    @abstractmethod
+    def get_result():
+        "Return the parameters"
+
+class ReadTasksCSV(ReadCSV):
+    "CSV reader for tasks."
+    def __init__(self):
+        self.product = ReadParameters()
+    def get_filename(self):
+        self.product.parameters.append('dict.csv')
+        return self
+    def get_delimiter(self):
+        self.product.parameters.append(';')
+        return self
+    def get_encoding(self):
+        self.product.parameters.append('UTF-8')
+        return self
+    def get_result(self):
+        return self.product
+
+class ReadParameters():
+    "List of parameters for read"
+    def __init__(self):
+        self.parameters = []
+
+
+class CSVReader:
+    "The Director, building a complex representation."
+    @staticmethod
+    def read():
+        "Constructs final parameters list"
+        return ReadTasksCSV()\
+        .get_filename()\
+        .get_delimiter()\
+        .get_encoding()\
+        .get_result()
+
+
+
+
+
+
+
+""" Builder - end """
 
 
 """ views """
@@ -268,12 +412,8 @@ def update(id):
 
 @app.route('/worker/undo')
 def undo():
-    #task_to_delete = Todo.query.get_or_404(id)
-
+    
     try:
-        #db.session.delete(task_to_delete)
-        #db.session.commit()
-        #print(f"usunieto task {task_to_delete}")
         history.undo()
         return redirect('/worker')
     except:
@@ -292,7 +432,9 @@ def about():
 
 
 """ execution """
+history = History()
 
+"""
 
 TASK_A = Task()
 TASK_B = Task()
@@ -312,4 +454,29 @@ print()
 TASK_B.method() # not in any composites
 TASK_GROUP_2.method() # COMPOSITE_2 contains both COMPOSITE_1 and LEAF_A
 
+"""
 
+
+# kod sprawdzajacy czy dwa polaczenia sa ta sama instancja 
+
+
+c1 = DBConnection.Instance()
+c2 = DBConnection.Instance()
+print("Id of c1 : {}".format(str(id(c1))))
+print("Id of c2 : {}".format(str(id(c1))))
+
+print("c1 is c2 ? " + str(c1 is c2))
+
+# read tasks from CSV
+
+#data = (ReadTasksCSV('dict.csv').withChunksize(10_1000).withDelimiter(',').withEncoding('UTF-8'))
+#print(data.withDelimiter)
+
+#data = ReadTasksCSV('dict.csv').withChunksize(10_1000).withDelimiter(',').withEncoding('UTF-8').withHeader(7).withNames('Task name,Task description,Task owner,Created at,Priority,Progress,Due dat').withNaValues('n/a'))
+
+# Builder client
+data = CSVReader.read()
+print(data.parameters)
+
+segment_data = pd.read_csv(data.parameters[0])
+print(segment_data)
