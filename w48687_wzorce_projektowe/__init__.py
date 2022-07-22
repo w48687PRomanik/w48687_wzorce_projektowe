@@ -237,7 +237,7 @@ class Singleton:
 
     def __instancecheck__(self, inst):
         return isinstance(inst, self._cls)
-
+     
 
 @Singleton
 class DBConnection(object):
@@ -266,7 +266,7 @@ class DBConnection(object):
 
 """ Singleton """
 
-""" Builder 
+""" Builder """
 
 
 class ReadCSV(metaclass=ABCMeta):
