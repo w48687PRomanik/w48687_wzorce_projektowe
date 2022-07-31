@@ -60,68 +60,6 @@ class Todo(db.Model):
 
 
 
-""" Kompozyt - grupowanie taskow"""
-
-class IComponent(metaclass=ABCMeta):
-    """
-    A component interface describing the common
-    fields and methods of leaves and composites
-    """
-    reference_to_parent = None
-    @staticmethod
-    @abstractmethod
-    def method():
-        "A method each Leaf and composite container should implement"
-    @staticmethod
-    @abstractmethod
-    def detach():
-        "Called before a task is attached to a task group"
-
-class Task(IComponent):
-    "A task can be added to a task group, but not a task"
-    def method(self):
-        parent_id = (id(self.reference_to_parent)
-        if self.reference_to_parent is not None else None)
-        print(
-            f"<Task>\t\tid:{id(self)}\tParent:\t{parent_id}"
-        )
-
-    def detach(self):
-        "Detaching this task from its parent task group"
-        if self.reference_to_parent is not None:
-            self.reference_to_parent.delete(self)
-
-class TaskGroup(IComponent):
-    "A task group can contain tasks and other task groups"
-    def __init__(self):
-        self.components = []
-    def method(self):
-        parent_id = (id(self.reference_to_parent)
-            if self.reference_to_parent is not None else None)
-        print(
-            f"<Task_group>\tid:{id(self)}\tParent:\t{parent_id}\t"
-            f"Components:{len(self.components)}")
-        for component in self.components:
-            component.method()
-    
-    def attach(self, component):
-        """
-        Detach leaf/composite from any current parent reference and
-        then set the parent reference to this composite (self)
-        """
-        component.detach()
-        component.reference_to_parent = self
-        self.components.append(component)
-    def delete(self, component):
-        "Removes task/task group from this task group self.components"
-        self.components.remove(component)
-    def detach(self):
-        "Detaching this task group from its parent composite"
-        if self.reference_to_parent is not None:
-            self.reference_to_parent.delete(self)
-            self.reference_to_parent = None
-
-""" Kompozyt """
 
 
 
